@@ -1,0 +1,204 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+  
+.title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #f5f5f5;
+}
+  
+.citiesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+  
+.cityCardWrapper {
+    display: flex;
+    position: relative;
+}
+
+.cityCardWrapper:hover .removeButton {
+    opacity: 1;
+}
+  
+.cityCard {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 10px;
+    padding: 20px;
+    text-decoration: none;
+    color: #333;
+    transition: box-shadow 0.3s ease;
+    width: 100%;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+  
+.cityCard:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+  
+.cityContent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+  
+.cityContent h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    flex-grow: 1;
+}
+  
+.cityContent p {
+    margin: auto 0 0 0;
+    color: #2f80ed;
+    font-weight: 500;
+}
+  
+.addCityCard {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+    border: 2px dashed #c3cfe2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+}
+  
+.addCityCard:hover {
+    background: linear-gradient(135deg, #e3e9f2 0%, #d7dfed 100%);
+    border-color: #a8b4d0;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+  
+.plusIcon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 15px;
+}
+  
+.plusHorizontal,
+.plusVertical {
+    position: absolute;
+    background-color: #2f80ed;
+    border-radius: 5px;
+}
+  
+.plusHorizontal {
+    width: 50px;
+    height: 6px;
+    top: 22px;
+    left: 0;
+}
+  
+.plusVertical {
+    width: 6px;
+    height: 50px;
+    left: 22px;
+    top: 0;
+}
+  
+.addCityCard h2 {
+    color: #2f80ed;
+    margin-bottom: 5px;
+}
+  
+.addCityCard p {
+    color: #6b7c93;
+    font-size: 0.9rem;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+  
+.modal {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+  
+.modal h3 {
+    margin-top: 0;
+    color: #2f80ed;
+}
+  
+.modalInput {
+    width: 100%;
+    padding: 10px;
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+  
+.modalButtons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+  
+.modalAddButton {
+    background: #2f80ed;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.modalAddButton:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+  
+.modalCancelButton {
+    background: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.removeButton {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #f44336;
+    color: white;
+    border: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+  
+.removeButton:hover {
+    background: #ae3830;
+}

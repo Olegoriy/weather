@@ -1,0 +1,28 @@
+/* [project]/app/FetchWeather/FetchWeather.module.css [app-client] (css) */
+.FetchWeather-module__C0SLva__loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.FetchWeather-module__C0SLva__loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: 1s linear infinite FetchWeather-module__C0SLva__spin;
+}
+
+@keyframes FetchWeather-module__C0SLva__spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=app_FetchWeather_FetchWeather_module_b52d8e88.css.map*/

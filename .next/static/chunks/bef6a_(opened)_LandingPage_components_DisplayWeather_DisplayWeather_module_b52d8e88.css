@@ -1,0 +1,43 @@
+/* [project]/src/app/(opened)/LandingPage/components/DisplayWeather/DisplayWeather.module.css [app-client] (css) */
+.DisplayWeather-module__tlBmTW__container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #0000001a;
+}
+
+.DisplayWeather-module__tlBmTW__title {
+  font-size: 2rem;
+  color: #1a237e;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.DisplayWeather-module__tlBmTW__weatherInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.DisplayWeather-module__tlBmTW__temperature {
+  font-size: 1.5rem;
+  color: #0d47a1;
+  font-weight: 500;
+}
+
+.DisplayWeather-module__tlBmTW__feelsLike {
+  color: #546e7a;
+  font-size: 1rem;
+}
+
+.DisplayWeather-module__tlBmTW__weatherIcon {
+  margin: 1rem 0;
+  background: #e3f2fd;
+  border-radius: 50%;
+  padding: .5rem;
+}
+
+/*# sourceMappingURL=bef6a_%28opened%29_LandingPage_components_DisplayWeather_DisplayWeather_module_b52d8e88.css.map*/
