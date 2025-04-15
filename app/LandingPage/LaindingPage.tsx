@@ -37,6 +37,10 @@ const LandingPage = () => {
     }
   }, [cities]);
 
+  useEffect(() => {
+    setCities(initialCities);
+  }, [initialCities]); // Добавьте initialCities в зависимости
+
   const handleAddCity = () => {
     if (newCity.trim() && !cities.includes(newCity.trim())) {
       setCities([...cities, newCity.trim()]);

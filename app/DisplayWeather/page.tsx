@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import { Suspense, useState } from 'react';
 import Image from 'next/image';
 import FetchWeather, { WeatherData } from '../FetchWeather/FetchWeather';
 import styles from './DisplayWeather.module.css'; 
@@ -10,7 +10,7 @@ import { useSearchParams } from 'next/navigation';
 const DisplayWeatherPage = () => {
   const [weatherData, setWeatherData] = useState<WeatherData | null>(null);
   const searchParams = useSearchParams();
-  const city = searchParams.get('city') ?? ('Санкт-Петербург');
+  const city = searchParams.get('city') ?? 'Санкт-Петербург';
 
   return (
     <div className={styles.container}>
@@ -91,4 +91,10 @@ const DisplayWeatherPage = () => {
   );
 };
 
-export default DisplayWeatherPage;
+export default function Page() {
+  return (
+    <Suspense fallback={<div>Загрузка...</div>}>
+      <DisplayWeatherPage />
+    </Suspense>
+  );
+}

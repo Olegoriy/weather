@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 39, "column": 0}, "map": {"version":3,"sources":["file:///Users/olegkiba/Desktop/Front%20course/weather/src/app/%28opened%29/LandingPage/LaindingPage.tsx"],"sourcesContent":["\"use client\";\n\nimport Link from \"next/link\";\n\nconst LandingPage = () => {\n  return (\n    <div>\n      <Link href=\"/DisplayWeather\">\n        <button>Показать погоду</button>\n      </Link>\n    </div>\n  );\n};\n\nexport default LandingPage;"],"names":[],"mappings":";;;;AAEA;AAFA;;;AAIA,MAAM,cAAc;IAClB,qBACE,8OAAC;kBACC,cAAA,8OAAC,4JAAA,CAAA,UAAI;YAAC,MAAK;sBACT,cAAA,8OAAC;0BAAO;;;;;;;;;;;;;;;;AAIhB;uCAEe","debugId":null}}]
-}
