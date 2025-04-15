@@ -1,1 +1,15 @@
-{"pages":{},"app":{"/Users/olegkiba/Desktop/Front course/weather/app/layout":["static/media/8a9e72331fecd08b-s.p.woff2","static/media/21ed5661b47f7f6d-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}
+{
+  "app": {
+    "[project]/app/DisplayWeather/page": [
+      "static/media/XRXV3I6Li01BKofINeaBTMnFcQ-s.p.9cacb698.woff2",
+      "static/media/XRXV3I6Li01BKofIMeaBTMnFcQIG-s.p.afe9d560.woff2"
+    ],
+    "[project]/app/page": [
+      "static/media/XRXV3I6Li01BKofIMeaBTMnFcQIG-s.p.afe9d560.woff2",
+      "static/media/XRXV3I6Li01BKofINeaBTMnFcQ-s.p.9cacb698.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}

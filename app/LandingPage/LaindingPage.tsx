@@ -21,7 +21,7 @@ const LandingPage = () => {
   const [showModal, setShowModal] = useState(false);
   const [newCity, setNewCity] = useState("");
 
-
+  // Загрузка городов из localStorage или установка initialCities
   useEffect(() => {
     const savedCities = localStorage.getItem("weatherCities");
     if (savedCities) {
@@ -31,16 +31,14 @@ const LandingPage = () => {
     }
   }, []);
 
+  // Сохранение городов в localStorage при их изменении
   useEffect(() => {
     if (cities.length > 0) {
       localStorage.setItem("weatherCities", JSON.stringify(cities));
     }
   }, [cities]);
 
-  useEffect(() => {
-    setCities(initialCities);
-  }, [initialCities]); // Добавьте initialCities в зависимости
-
+  // Удалён лишний useEffect, чтобы избежать бесконечного цикла
   const handleAddCity = () => {
     if (newCity.trim() && !cities.includes(newCity.trim())) {
       setCities([...cities, newCity.trim()]);
